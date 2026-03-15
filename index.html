@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ILK1042 | Official</title>
+    <title>ILK1042 | Under Construction</title>
     <style>
-        body { background: #0a0a0a; color: #00ff41; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
-        .container { text-align: center; border: 1px solid #00ff41; padding: 40px; box-shadow: 0 0 20px rgba(0,255,65,0.2); }
-        h1 { font-size: 2.5em; text-transform: uppercase; letter-spacing: 5px; margin: 0; }
-        p { color: #888; margin-top: 15px; }
-        .cursor { animation: blink 1s infinite; }
-        @keyframes blink { 0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
+        body { 
+            background: #0a0a0a; 
+            color: #00ff41; 
+            font-family: 'Courier New', monospace; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            flex-direction: column;
+        }
+        .container { 
+            text-align: center; 
+            border: 1px solid #00ff41; 
+            padding: 40px; 
+            position: relative;
+        }
+        h1 { font-size: 2.5em; margin: 0; }
+        
+        .status {
+            margin-top: 20px;
+            font-size: 1.2em;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #00ff41;
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.8s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #00ff41 }
+        }
+
+        .footer { margin-top: 30px; color: #444; font-size: 0.7em; text-transform: uppercase; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ILK1042<span class="cursor">_</span></h1>
-        <p>SYSTEM STATUS: ONLINE</p>
-        <p style="font-size: 0.8em;">© All Rights Reserved</p>
+        <h1>ILK1042</h1>
+        <div class="status">> Сайт ещё в разработке...</div>
     </div>
+    <div class="footer">Establishment: 2026 | All Rights Reserved</div>
 </body>
 </html>
+
